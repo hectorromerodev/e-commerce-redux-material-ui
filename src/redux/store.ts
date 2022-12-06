@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
@@ -35,8 +35,15 @@ const store = configureStore({
     })
 });
 
+// Types
 export type RootState = ReturnType<typeof store.getState>;
 export type Dispatch = typeof store.dispatch;
+export type Thunk = ThunkAction<
+  Promise<any>,
+  RootState,
+  unknown,
+  Action<unknown>
+>;
 
 export const persistor = persistStore(store);
 
