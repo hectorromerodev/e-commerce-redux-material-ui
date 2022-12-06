@@ -18,14 +18,6 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "components/*": ["src/components/*"],
-      "pages/*": ["src/pages/*"],
-      "utils/*": ["src/utils/*"],
-      "styles/*": ["src/styles/*"],
-      "hooks/*": ["src/hooks/*"],
-      "models/*": ["src/models/*"],
-      "redux/*": ["src/redux/*"],
-
     }
   },
   "include": [
