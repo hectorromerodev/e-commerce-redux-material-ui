@@ -18,4 +18,6 @@ const productsSlice = createSlice({
   }
 });
 
+export const { fetchProductsStart } = productsSlice.actions;
+
 export default productsSlice.reducer;
