@@ -1,4 +1,4 @@
-import User from './User.interface';
+import User from '../User.interface';
 
 export default interface AuthState {
   user: User | null;
